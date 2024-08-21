@@ -15,7 +15,7 @@ const SwitchLanguageButton = () => {
         <div>
             {
                 <div
-                    className="fixed top-[63px] left-[166px]
+                    className="relative
                             bg-[url(/images/LanguageSwitchFrame.svg)] w-[102px] h-[35px] bg-contain
                             flex items-center hover:cursor-pointer"
                     onClick={handleChangeLanguage}

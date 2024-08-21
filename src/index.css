@@ -26,6 +26,18 @@ body {
     color: #fddec3;
 }
 
+.cryptorollOrangeBg {
+    background-color: #d47b28;
+}
+
+.cryptorollOrangeBgBrighter {
+    background-color: #d4975e;
+}
+
+.cryptorollOrangeText {
+    color: #d47b28;
+}
+
 .undraggable {
     -webkit-user-drag: none; /* For Safari and Chrome */
 }

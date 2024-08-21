@@ -2,6 +2,7 @@ import "./i18n";
 import { createContext, useState } from "react";
 import SwitchLanguageButton from "./components/buttons/SwitchLanguageButton";
 import DarkLightModeSwitch from "./components/buttons/DarkLightModeSwitch";
+import Header from "./components/mainComponents/Header";
 
 interface ApplicationContextInterface {
     isDarkMode: boolean;
@@ -16,8 +17,7 @@ function App() {
 
     return (
         <ApplicationContext.Provider value={{ isDarkMode }}>
-            <DarkLightModeSwitch setIsDarkMode={setIsDarkMode} />
-            <SwitchLanguageButton />
+            <Header setIsDarkMode={setIsDarkMode} />
             {
                 // <div className="cryptorollWhiteText">
                 //     <div className="font-[400]">{t("entryPhrase")}</div>

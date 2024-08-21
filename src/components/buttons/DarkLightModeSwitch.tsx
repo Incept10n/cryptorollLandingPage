@@ -17,7 +17,7 @@ const DarkLightModeSwitch = ({
     };
 
     return (
-        <div className="fixed top-[63px] left-[111px]">
+        <div className="top-[63px] left-[111px]">
             <div
                 className={`${
                     isDarkMode
@@ -25,7 +25,7 @@ const DarkLightModeSwitch = ({
                         : "bg-[url(/images/moonLightDarkModeSwitch.svg)] transition-all delay-[100ms]"
                 }
                 ${triggerAnimation ? "appear" : ""}
-                w-[35px] h-[35px] hover:cursor-pointer`}
+                w-[35px] h-[35px] hover:cursor-pointer relative`}
                 onClick={handleToggle}
             ></div>
         </div>
