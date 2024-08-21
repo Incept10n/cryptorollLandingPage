@@ -33,3 +33,22 @@ body {
 .monoPtFont {
     font-family: "PT Mono", monospace;
 }
+
+.appear {
+    animation: appearAnimation 0.2s linear;
+}
+
+@keyframes appearAnimation {
+    0% {
+        scale: 1;
+        transform-origin: center;
+    }
+    50% {
+        scale: 0.4;
+        transform-origin: center;
+    }
+    100% {
+        scale: 1;
+        transform-origin: center;
+    }
+}
