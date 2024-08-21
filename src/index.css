@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+
+@font-face {
+    font-family: "fontOver";
+    src: url("/fontOver.otf") format("opentype");
+}
+
+body {
+    font-family: "fontOver", sans-serif;
+    background-color: #000010;
+}
+
+.cryptorollBlackBg {
+    background-color: #000010;
+}
+
+.cryptorollWhiteBg {
+    background-color: #fddec3;
+}
+
+.cryptorollWhiteText {
+    color: #fddec3;
+}
+
+.undraggable {
+    -webkit-user-drag: none; /* For Safari and Chrome */
+}
+
+.monoPtFont {
+    font-family: "PT Mono", monospace;
+}
