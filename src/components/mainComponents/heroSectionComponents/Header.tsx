@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
-import DarkLightModeSwitch from "../buttons/DarkLightModeSwitch";
-import SwitchLanguageButton from "../buttons/SwitchLanguageButton";
-import GoToWhitepaperButton from "../buttons/GoToWhitepaperButton";
+import DarkLightModeSwitch from "../../buttons/DarkLightModeSwitch";
+import SwitchLanguageButton from "../../buttons/SwitchLanguageButton";
+import GoToWhitepaperButton from "../../buttons/GoToWhitepaperButton";
 
 const Header = ({
     setIsDarkMode,

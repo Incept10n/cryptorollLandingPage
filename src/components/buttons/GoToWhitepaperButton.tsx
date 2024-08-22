@@ -31,7 +31,7 @@ const GoToWhitepaperButton = () => {
                 />
                 <div
                     className="absolute left-[50%] -translate-x-[50%] top-[50%] -translate-y-[50%]
-                                text-white monoPtFont"
+                                text-white monoPtFont select-none"
                 >
                     Whitepaper
                 </div>

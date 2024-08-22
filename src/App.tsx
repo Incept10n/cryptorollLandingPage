@@ -1,8 +1,7 @@
 import "./i18n";
-import { createContext, useState } from "react";
-import SwitchLanguageButton from "./components/buttons/SwitchLanguageButton";
-import DarkLightModeSwitch from "./components/buttons/DarkLightModeSwitch";
-import Header from "./components/mainComponents/Header";
+import { createContext, useEffect, useState } from "react";
+import Hero from "./components/mainComponents/Hero";
+import PhrasesSection from "./components/mainComponents/PhrasesSection";
 
 interface ApplicationContextInterface {
     isDarkMode: boolean;
@@ -15,14 +14,20 @@ export const ApplicationContext = createContext<
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
 
+    useEffect(() => {
+        if (isDarkMode) {
+            document.body.classList.add("cryptorollDarkModeBg");
+            document.body.classList.remove("cryptorollWhiteBg");
+        } else {
+            document.body.classList.add("cryptorollWhiteBg");
+            document.body.classList.remove("cryptorollDarkModeBg");
+        }
+    }, [isDarkMode]);
+
     return (
         <ApplicationContext.Provider value={{ isDarkMode }}>
-            <Header setIsDarkMode={setIsDarkMode} />
-            {
-                // <div className="cryptorollWhiteText">
-                //     <div className="font-[400]">{t("entryPhrase")}</div>
-                // </div>
-            }
+            <Hero setIsDarkMode={setIsDarkMode} />
+            <PhrasesSection />
         </ApplicationContext.Provider>
     );
 }
