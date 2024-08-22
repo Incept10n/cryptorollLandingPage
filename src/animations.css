@@ -36,3 +36,18 @@
         transform: translateY(-150px);
     }
 }
+
+.slideRight {
+    /* animation: slideRight 1s ease-in-out forwards; */
+    /* animation-delay: 1s; */
+    left: 23%;
+}
+
+/* @keyframes slideRight { */
+/*     0% { */
+/*         left: -100%; */
+/*     } */
+/*     100% { */
+/*         left: 23%; */
+/*     } */
+/* } */

@@ -1,4 +1,27 @@
 {
     "entryPhrase": "cryptoroll - first ton based casino with nft's",
-    "currentLanguage": "Eng."
+    "currentLanguage": "Eng.",
+
+    "noMinimums": "no minimums:",
+    "anyTime": "deposit and withdraw anytime,",
+    "noLimits": "no limits.",
+
+    "bonuses": "bonuses",
+    "forNft": "for nft",
+    "holdingAndMore": "holding and more.",
+
+    "revolut": "revolutionizing",
+    "row1": "online gambling with",
+    "row2": "decentralization and nfts",
+    "row3": "on the ton blockchain.",
+
+    "lowFees": "low fees",
+    "and": " and",
+    "fair": "fair",
+    "gambling": "gambling.",
+
+    "fastService": "lighting-fast service",
+    "withdrawals": "and withdrawals",
+    "with": "with",
+    "oneClick": "just one click."
 }

@@ -1,4 +1,27 @@
 {
     "entryPhrase": "cryptoroll - первое казино на базе TON с NFT",
-    "currentLanguage": "Рус."
+    "currentLanguage": "Рус.",
+
+    "noMinimums": "никаких минимумов:",
+    "anyTime": "депозит и вывод в любое время,",
+    "noLimits": "без ограничений",
+
+    "bonuses": "бонусы",
+    "forNft": "для владельцев",
+    "holdingAndMore": "nft и других игроков",
+
+    "revolut": "революционные",
+    "row1": "сетевые азартные игры",
+    "row2": "с децентрализацией и nft",
+    "row3": "на ton блокчейне",
+
+    "lowFees": "низкие комиссии",
+    "and": "и",
+    "fair": "честная",
+    "gambling": "игра.",
+
+    "fastService": "молниеностный сервис",
+    "withdrawals": "и вывод",
+    "with": "за",
+    "oneClick": "один клик"
 }
