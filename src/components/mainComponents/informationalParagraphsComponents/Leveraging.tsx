@@ -32,18 +32,20 @@ const Leveraging = () => {
     }, []);
 
     return (
-        <div ref={divRef} className="text-center relative overflow-hidden">
-            <div
-                className={`flex flex-col items-center
+        <div ref={divRef} className="text-center relative">
+            <div className="overflow-hidden">
+                <div
+                    className={`flex flex-col items-center
                             ${slideLeft ? "translate-x-0" : "translate-x-[110%]"}
                             transition-all duration-[1.2s] ease-in-out`}
-            >
-                <h1 className="font-[500] text-[40px] max-w-[916px]">
-                    {t("leveragingHeader")}
-                </h1>
-                <p className="monoPtFont max-w-[883px] mt-[35px] text-[20px]">
-                    {t("leveragingParagraph")}
-                </p>
+                >
+                    <h1 className="font-[500] text-[40px] max-w-[916px]">
+                        {t("leveragingHeader")}
+                    </h1>
+                    <p className="monoPtFont max-w-[883px] mt-[35px] text-[20px]">
+                        {t("leveragingParagraph")}
+                    </p>
+                </div>
             </div>
             <div
                 className="absolute left-[19%] top-[30%] w-[58px] h-[58px]
