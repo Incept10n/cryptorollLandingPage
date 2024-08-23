@@ -2,6 +2,7 @@ import "./i18n";
 import { createContext, useEffect, useState } from "react";
 import Hero from "./components/mainComponents/Hero";
 import PhrasesSection from "./components/mainComponents/PhrasesSection";
+import InformationalParagraphs from "./components/mainComponents/InformationalParagraphs";
 
 interface ApplicationContextInterface {
     isDarkMode: boolean;
@@ -28,6 +29,7 @@ function App() {
         <ApplicationContext.Provider value={{ isDarkMode }}>
             <Hero setIsDarkMode={setIsDarkMode} />
             <PhrasesSection />
+            <InformationalParagraphs />
         </ApplicationContext.Provider>
     );
 }

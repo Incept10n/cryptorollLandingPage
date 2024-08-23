@@ -23,5 +23,17 @@
     "fastService": "lighting-fast service",
     "withdrawals": "and withdrawals",
     "with": "with",
-    "oneClick": "just one click."
+    "oneClick": "just one click.",
+
+    "lowerFeesheader": "lower fees, higher rewards",
+    "lowerFeesParagraph": "Our fully decentralized peer-to-peer (P2P) gambling platform significantly reduces fees compared to traditional systems. By eliminating intermediaries, we lower the cost for players, allowing them to enjoy more of their winnings. This P2P approach not only reduces fees but also increases transparency and fairness, as all transactions are handled directly between players.",
+
+    "nftsHeader": "NFTs: Adding a New Dimension to Gambling",
+    "nftsParagraph": "NFTs will enhance the gambling experience by providing lower fees, visual appeal and additional functionalities. Players can use NFTs to unlock special features, access exclusive games, and receive bonuses. These NFTs will not only serve as digital collectibles but also as valuable assets that enhance the overall gaming experience.",
+
+    "fairAndTransparentHeader": "A Fair and Transparent Gambling Ecosystem",
+    "fairAndTransparentParagraph": "Our mission is clear: to build the best Web3 gambling platform, leveraging the TON blockchain's capabilities. Traditional gambling has long been marred by issues of centralization, high fees, and a lack of transparency. These problems erode trust and fairness, leading to an unsatisfactory experience for many players. Our platform aims to change that narrative.",
+
+    "leveragingHeader": "Leveraging the TON Blockchain",
+    "leveragingParagraph": "We chose the TON blockchain for its remarkable attributes: speed, security, and scalability. These features are essential for providing a seamless gambling experience. The TON blockchain ensures that transactions are processed swiftly and securely, handling a high volume of transactions without compromising performance. This reliability is crucial for maintaining player confidence and ensuring smooth gameplay."
 }
