@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from "react";
 import Hero from "./components/mainComponents/Hero";
 import PhrasesSection from "./components/mainComponents/PhrasesSection";
 import InformationalParagraphs from "./components/mainComponents/InformationalParagraphs";
+import Roadmap from "./components/mainComponents/Roadmap";
 
 interface ApplicationContextInterface {
     isDarkMode: boolean;
@@ -30,6 +31,7 @@ function App() {
             <Hero setIsDarkMode={setIsDarkMode} />
             <PhrasesSection />
             <InformationalParagraphs />
+            <Roadmap />
         </ApplicationContext.Provider>
     );
 }

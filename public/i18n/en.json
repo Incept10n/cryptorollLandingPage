@@ -35,5 +35,27 @@
     "fairAndTransparentParagraph": "Our mission is clear: to build the best Web3 gambling platform, leveraging the TON blockchain's capabilities. Traditional gambling has long been marred by issues of centralization, high fees, and a lack of transparency. These problems erode trust and fairness, leading to an unsatisfactory experience for many players. Our platform aims to change that narrative.",
 
     "leveragingHeader": "Leveraging the TON Blockchain",
-    "leveragingParagraph": "We chose the TON blockchain for its remarkable attributes: speed, security, and scalability. These features are essential for providing a seamless gambling experience. The TON blockchain ensures that transactions are processed swiftly and securely, handling a high volume of transactions without compromising performance. This reliability is crucial for maintaining player confidence and ensuring smooth gameplay."
+    "leveragingParagraph": "We chose the TON blockchain for its remarkable attributes: speed, security, and scalability. These features are essential for providing a seamless gambling experience. The TON blockchain ensures that transactions are processed swiftly and securely, handling a high volume of transactions without compromising performance. This reliability is crucial for maintaining player confidence and ensuring smooth gameplay.",
+
+    "roadmap": "roadmap",
+
+    "launchNftHeader": "launch nft",
+    "launchNftDate": "Q4 2024",
+    "launchNftText": "Release our first set of NFTs, which will be used to enhance the gambling experience and provide staking rewards.",
+
+    "launchAppHeader": "Launch Gambling App",
+    "launchAppDate": "Q1 2025",
+    "launchAppText": "Develop and launch our decentralized gambling application on the TON blockchain.",
+
+    "launchStakingHeader": "Launch Staking Program",
+    "launchStakingDate": "Q2 2025",
+    "launchStakingText": "Introduce a staking program where users can earn new tokens and NFTs, encouraging engagement and investment in the platform.",
+
+    "launchTokenHeader": "Launch Token",
+    "launchTokenDate": "Q3 2025",
+    "launchTokenText": "Release our platform's native token, which will be used for transactions, staking, and governance.",
+
+    "tokenListingHeader": "Token Listing",
+    "tokenListingDate": "Q4 2025",
+    "tokenListingText": "List our token on major cryptocurrency exchanges to ensure liquidity and accessibility for all users."
 }
