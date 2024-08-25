@@ -1,10 +1,6 @@
 import { Dispatch, SetStateAction } from "react";
 import Hero from "./homeComponents/Hero";
-// import PhrasesSection from "./homeComponents/PhrasesSection";
-// import InformationalParagraphs from "./homeComponents/InformationalParagraphs";
-// import Roadmap from "./homeComponents/Roadmap";
-// import Faq from "./homeComponents/Faq";
-// import Footer from "./homeComponents/Footer";
+import PhrasesSection from "./homeComponents/PhrasesSection";
 
 const Home = ({
     setIsDarkMode,
@@ -14,8 +10,8 @@ const Home = ({
     return (
         <>
             <Hero setIsDarkMode={setIsDarkMode} />
+            <PhrasesSection />
             {
-                // <PhrasesSection />
                 // <InformationalParagraphs />
                 // <Roadmap />
                 // <Faq />

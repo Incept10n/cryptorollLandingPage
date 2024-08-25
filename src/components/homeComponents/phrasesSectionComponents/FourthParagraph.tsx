@@ -4,7 +4,12 @@ const FourthParagraph = () => {
     const { i18n, t } = useTranslation();
 
     return (
-        <div className="absolute top-[59%] left-[53%]">
+        <div
+            className="absolute md:w-[370px] w-[191px] 
+                       md:top-[64%] top-[66%]
+                       lg:left-[53%] lg:translate-x-0 left-[50%] -translate-x-[50%] 
+                       md:leading-[31.65px] leading-[15.82px]"
+        >
             <div>
                 {t("lowFees")}
                 {i18n.language === "en" && t("and")}

@@ -5,6 +5,8 @@ import languageSwitchFrame from "/images/LanguageSwitchFrame.svg";
 import languageSwitchFrameDarkMode from "/images/languageSwitchFrameLightMode.svg";
 import worldIconDarkMode from "/images/WorldIcon.svg";
 import worldIconLightMode from "/images/worldIconLightMode.svg";
+import phrasesBigBg from "/phrasesBackground.svg";
+import phrasesSmallBg from "/phrasesBackgroundSmall.svg";
 
 export const assets = {
     icons: {
@@ -24,6 +26,10 @@ export const assets = {
         switchLanguageFrame: {
             darkMode: languageSwitchFrame,
             lightMode: languageSwitchFrameDarkMode,
+        },
+        phrasesBg: {
+            big: phrasesBigBg,
+            small: phrasesSmallBg,
         },
     },
 };
