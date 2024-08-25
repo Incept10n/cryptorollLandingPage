@@ -1,10 +1,13 @@
 import { Dispatch, SetStateAction, useContext, useState } from "react";
 import { ApplicationContext } from "../../App";
+import { assets } from "../../images";
 
 const DarkLightModeSwitch = ({
     setIsDarkMode,
+    swapBg,
 }: {
     setIsDarkMode: Dispatch<SetStateAction<boolean>>;
+    swapBg?: boolean;
 }) => {
     const { isDarkMode } = useContext(ApplicationContext)!;
     const [triggerAnimation, setTriggerAnimation] = useState<boolean>(false);
@@ -18,16 +21,20 @@ const DarkLightModeSwitch = ({
 
     return (
         <div className="top-[63px] left-[111px]">
-            <div
-                className={`${
-                    isDarkMode
-                        ? "bg-[url(/images/sunLightDarkModeSwitch.svg)] transition-all delay-[100ms]"
-                        : "bg-[url(/images/moonLightDarkModeSwitch.svg)] transition-all delay-[100ms]"
-                }
-                ${triggerAnimation ? "appear" : ""}
+            <img
+                className={`transition-all delay-[100ms] 
+                            ${triggerAnimation ? "appear" : ""}
                 w-[35px] h-[35px] hover:cursor-pointer relative`}
                 onClick={handleToggle}
-            ></div>
+                src={
+                    isDarkMode
+                        ? assets.icons.sunSwitchMode.darkMode
+                        : swapBg
+                          ? assets.icons.moonSwitchMode.lightMode
+                          : assets.icons.moonSwitchMode.darkMode
+                }
+                draggable={false}
+            />
         </div>
     );
 };

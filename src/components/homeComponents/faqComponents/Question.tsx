@@ -37,7 +37,7 @@ const Question = ({
                 </div>
                 <div
                     className={`w-full h-[1px]
-                            ${isDarkMode ? "cryptorollWhiteBg" : "cryptorollDarkBg"}`}
+                            ${isDarkMode ? "cryptorollWhiteBg" : "cryptorollBlackBg"}`}
                 />
             </div>
             <p

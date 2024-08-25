@@ -1,16 +1,44 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { ApplicationContext } from "../../App";
+import { useTranslation } from "react-i18next";
 
-const GoToWhitepaperButton = () => {
-    const [currentBgColor, setCurrentBgColor] =
-        useState<string>("cryptorollOrangeBg");
+const GoBackButton = () => {
+    const { isDarkMode } = useContext(ApplicationContext)!;
+    const { t } = useTranslation();
+
+    const [currentBgColor, setCurrentBgColor] = useState<string>(
+        isDarkMode ? "cryptorollOrangeBg" : "cryptorollBlackBg",
+    );
+
+    const handleMouseEnter = () => {
+        if (isDarkMode) {
+            setCurrentBgColor("cryptorollOrangeBgBrighter");
+        } else {
+            setCurrentBgColor("bg-gray-500");
+        }
+    };
+
+    const handleMouseLeave = () => {
+        if (isDarkMode) {
+            setCurrentBgColor("cryptorollOrangeBg");
+        } else {
+            setCurrentBgColor("cryptorollBlackBg");
+        }
+    };
+
+    useEffect(() => {
+        setCurrentBgColor(
+            isDarkMode ? "cryptorollOrangeBg" : "cryptorollBlackBg",
+        );
+    }, [isDarkMode]);
 
     return (
         <Link
-            to={"/whitepaper"}
+            to={"/"}
             className="hover:cursor-pointer"
-            onMouseEnter={() => setCurrentBgColor("cryptorollOrangeBgBrighter")}
-            onMouseLeave={() => setCurrentBgColor("cryptorollOrangeBg")}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
         >
             <div
                 className={`relative w-[120.44px] h-[33.35px] ${currentBgColor}`}
@@ -33,13 +61,13 @@ const GoToWhitepaperButton = () => {
                 />
                 <div
                     className="absolute left-[50%] -translate-x-[50%] top-[50%] -translate-y-[50%]
-                                text-white monoPtFont select-none"
+                                text-white monoPtFont select-none w-full text-center"
                 >
-                    Whitepaper
+                    {t("goBack")}
                 </div>
             </div>
         </Link>
     );
 };
 
-export default GoToWhitepaperButton;
+export default GoBackButton;

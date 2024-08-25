@@ -5,7 +5,7 @@ const ExitIcon = ({ isDarkMode }: { isDarkMode: boolean }) => {
                         ${
                             isDarkMode
                                 ? "bg-[url(/faqIcons/exitDarkMode.svg)]"
-                                : "bg-[url(/faqIcons/exitLightMode.svg.svg)]"
+                                : "bg-[url(/faqIcons/exitLightMode.svg)]"
                         }`}
         />
     );

@@ -1,11 +1,8 @@
 import "./i18n";
 import { createContext, useEffect, useState } from "react";
-import Hero from "./components/mainComponents/Hero";
-import PhrasesSection from "./components/mainComponents/PhrasesSection";
-import InformationalParagraphs from "./components/mainComponents/InformationalParagraphs";
-import Roadmap from "./components/mainComponents/Roadmap";
-import Faq from "./components/mainComponents/Faq";
-import Footer from "./components/mainComponents/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Whitepaper from "./components/Whitepaper";
 
 interface ApplicationContextInterface {
     isDarkMode: boolean;
@@ -30,12 +27,18 @@ function App() {
 
     return (
         <ApplicationContext.Provider value={{ isDarkMode }}>
-            <Hero setIsDarkMode={setIsDarkMode} />
-            <PhrasesSection />
-            <InformationalParagraphs />
-            <Roadmap />
-            <Faq />
-            <Footer />
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                        path="/"
+                        element={<Home setIsDarkMode={setIsDarkMode} />}
+                    />
+                    <Route
+                        path="/whitepaper"
+                        element={<Whitepaper setIsDarkMode={setIsDarkMode} />}
+                    />
+                </Routes>
+            </BrowserRouter>
         </ApplicationContext.Provider>
     );
 }

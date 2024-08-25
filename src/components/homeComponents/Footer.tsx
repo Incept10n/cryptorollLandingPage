@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { ApplicationContext } from "../../App";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -14,9 +15,12 @@ const Footer = () => {
                             ${isDarkMode ? "cryptorollWhiteText" : "cryptorollDarkText"}`}
             >
                 <span>{t("footerTextPart1")}</span>
-                <span className="cryptorollOrangeText hover:cursor-pointer">
+                <Link
+                    to="/whitepaper"
+                    className="cryptorollOrangeText hover:cursor-pointer hover:underline"
+                >
                     {t("whitepaper")}
-                </span>
+                </Link>
                 <span>{t("footerTextPart2")}</span>
             </div>
             <div className="flex space-x-[40px] mt-[20px]">
