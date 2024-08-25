@@ -11,7 +11,7 @@ const Hero = ({
 }) => {
     return (
         <div className="h-[100vh] cryptorollBlackBg">
-            <div className="absolute top-0 left-0">
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
                 <BleakSpawner />
             </div>
             <Header setIsDarkMode={setIsDarkMode} />

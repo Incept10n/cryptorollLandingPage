@@ -8,6 +8,11 @@ const BleakSpawner = () => {
     >([]);
     const [nextBlueId, setNextBlueId] = useState(0);
 
+    const [brownBleaks, setBrownBleaks] = useState<
+        { id: number; x: number; y: number }[]
+    >([]);
+    const [nextBrownId, setNextBrownId] = useState(0);
+
     const createBlueBleak = () => {
         const randomX = Math.random() * (window.innerWidth - 50);
         const randomY = Math.random() * window.innerHeight;
@@ -23,19 +28,6 @@ const BleakSpawner = () => {
             clearTimeout(timer);
         }, 7000);
     };
-
-    useEffect(() => {
-        const interval = setInterval(createBlueBleak, 1000);
-
-        return () => clearInterval(interval);
-    }, [nextBlueId]);
-
-    //*------------------------------------------------------*//
-
-    const [brownBleaks, setBrownBleaks] = useState<
-        { id: number; x: number; y: number }[]
-    >([]);
-    const [nextBrownId, setNextBrownId] = useState(0);
 
     const createBrownBleak = () => {
         const randomX = Math.random() * (window.innerWidth - 50);
@@ -54,8 +46,12 @@ const BleakSpawner = () => {
     };
 
     useEffect(() => {
-        const interval = setInterval(createBrownBleak, 1000);
+        const interval = setInterval(createBlueBleak, 1000);
+        return () => clearInterval(interval);
+    }, [nextBlueId]);
 
+    useEffect(() => {
+        const interval = setInterval(createBrownBleak, 1000);
         return () => clearInterval(interval);
     }, [nextBrownId]);
 

@@ -8,7 +8,9 @@ const GoToWhitepaperButton = () => {
     return (
         <Link
             to={"/whitepaper"}
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer 
+                       sm:relative absolute sm:left-auto sm:top-auto 
+                       left-[50%] top-[70%] sm:translate-x-0 translate-x-[-50%]"
             onMouseEnter={() => setCurrentBgColor("cryptorollOrangeBgBrighter")}
             onMouseLeave={() => setCurrentBgColor("cryptorollOrangeBg")}
         >
