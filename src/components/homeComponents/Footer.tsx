@@ -17,7 +17,7 @@ const Footer = () => {
                 <span>{t("footerTextPart1")}</span>
                 <Link
                     to="/whitepaper"
-                    className="cryptorollOrangeText hover:cursor-pointer hover:underline"
+                    className="cryptorollOrangeText hover:cursor-pointer hover:underline mx-[7px]"
                 >
                     {t("whitepaper")}
                 </Link>

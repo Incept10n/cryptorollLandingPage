@@ -22,9 +22,9 @@ const DarkLightModeSwitch = ({
     return (
         <div className="top-[63px] left-[111px]">
             <img
-                className={`transition-all delay-[100ms] 
+                className={`transition-all delay-[100ms] select-none
                             ${triggerAnimation ? "appear" : ""}
-                w-[35px] h-[35px] hover:cursor-pointer relative`}
+                            w-[35px] h-[35px] hover:cursor-pointer relative`}
                 onClick={handleToggle}
                 src={
                     isDarkMode
