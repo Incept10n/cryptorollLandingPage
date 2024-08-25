@@ -78,5 +78,9 @@
     "question5Answer": "We don't have an actual app at the moment, but we are working on one. Developing such an app takes time and a lot of hard work. The current Coinflip is not the actual Cryptotroll app. This app was created by the founder of the project and is a demo version for users to see what a real decentralized app would be like.",
 
     "question6": "Is there a way to become a private member?",
-    "question6Answer": "At the moment, there is no such opportunity. However, after the launch of the DApp, it is planned to create some spaces and communities for our NFT holders."
+    "question6Answer": "At the moment, there is no such opportunity. However, after the launch of the DApp, it is planned to create some spaces and communities for our NFT holders.",
+
+    "footerTextPart1": "If you haven’t found the answer to your question, you can check out the ",
+    "whitepaper": "whitepaper",
+    "footerTextPart2": " or ask a question on our social networks."
 }

@@ -3,7 +3,7 @@ import QuestionsAndAnswers from "./faqComponents/QuestionsAndAnswers";
 
 const Faq = () => {
     return (
-        <div className="h-[70vh] flex justify-around items-start pt-[200px]">
+        <div className="flex justify-around items-start py-[200px]">
             <AnyQuestions />
             <QuestionsAndAnswers />
         </div>
