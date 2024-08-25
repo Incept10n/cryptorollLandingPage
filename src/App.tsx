@@ -4,6 +4,7 @@ import Hero from "./components/mainComponents/Hero";
 import PhrasesSection from "./components/mainComponents/PhrasesSection";
 import InformationalParagraphs from "./components/mainComponents/InformationalParagraphs";
 import Roadmap from "./components/mainComponents/Roadmap";
+import Faq from "./components/mainComponents/Faq";
 
 interface ApplicationContextInterface {
     isDarkMode: boolean;
@@ -32,6 +33,7 @@ function App() {
             <PhrasesSection />
             <InformationalParagraphs />
             <Roadmap />
+            <Faq />
         </ApplicationContext.Provider>
     );
 }

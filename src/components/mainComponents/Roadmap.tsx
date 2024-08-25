@@ -8,7 +8,7 @@ const Roadmap = () => {
     const [isRoadmapExtended, setIsRoadmapExtended] = useState(false);
 
     return (
-        <div className="h-[200vh] overflow-hidden relative">
+        <div className="h-[120vh] overflow-hidden relative">
             <h1 className="cryptorollOrangeText text-[40px] text-center">
                 {t("roadmap")}
             </h1>
