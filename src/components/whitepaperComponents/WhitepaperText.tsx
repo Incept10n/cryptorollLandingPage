@@ -11,12 +11,13 @@ const WhitepaperText = () => {
 
     return (
         <div
-            className={`mx-auto max-w-[912px] text-[20px]
+            className={`mx-auto lg:max-w-[912px] sm:max-w-[80%] max-w-[70%]  
+                        sm:text-[20px] text-[14px]
                          ${isDarkMode ? "cryptorollWhiteText" : "cryptorollDarkText"}`}
         >
             <BigParagraph header={t("summary")} text={t("summaryText")} />
             <BigParagraph header={t("intro")} text={t("introText")} />
-            <h1 className="mt-[60px] cryptorollOrangeText">
+            <h1 className="sm:mt-[60px] mt-[40px] cryptorollOrangeText">
                 {t("keyFeaturesHeader")}
             </h1>
             <SubParagraph header={t("feature1")} text={t("feature1Text")} />
@@ -24,12 +25,12 @@ const WhitepaperText = () => {
             <SubParagraph header={t("feature3")} text={t("feature3Text")} />
             <SubParagraph header={t("feature4")} text={t("feature4Text")} />
             <SubParagraph header={t("feature5")} text={t("feature5Text")} />
-            <h1 className="mt-[60px] cryptorollOrangeText">
+            <h1 className="sm:mt-[60px] mt-[40px] cryptorollOrangeText">
                 {t("differentiatorsHeader")}
             </h1>
             <SubParagraph header={t("diff1")} text={t("diff1Text")} />
             <SubParagraph header={t("diff2")} text={t("diff2Text")} />
-            <h1 className="mt-[60px] cryptorollOrangeText">
+            <h1 className="sm:mt-[60px] mt-[40px] cryptorollOrangeText">
                 {t("roadmapHeader")}
             </h1>
             <SubParagraph header={t("step1")} text={t("step1Text")} />

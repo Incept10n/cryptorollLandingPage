@@ -21,7 +21,7 @@ const SwitchLanguageButton = ({ swapBg }: { swapBg?: boolean }) => {
             {
                 <div
                     className="relative
-                            w-[102px] h-[35px] bg-contain
+                            sm:w-[102px] sm:h-[35px] w-[90.96px] h-[31.21px] bg-contain
                             flex items-center hover:cursor-pointer"
                     onClick={handleChangeLanguage}
                     style={{
@@ -32,8 +32,13 @@ const SwitchLanguageButton = ({ swapBg }: { swapBg?: boolean }) => {
                     }}
                 >
                     <div
-                        className={`w-[24px] h-[24px] bg-contain absolute
-                                    ${i18n.language === "en" ? "left-[12px]" : "left-[66px] rotate-[360deg]"}
+                        className={`sm:w-[24px] sm:h-[24px] w-[21.4px] h-[21.4px] 
+                                    bg-contain absolute
+                                    ${
+                                        i18n.language === "en"
+                                            ? "sm:left-[12px] left-[8px]"
+                                            : "sm:left-[66px] left-[60px] rotate-[360deg]"
+                                    }
                                     transition-all duration-[0.5s] ease-out`}
                         style={{
                             backgroundImage:
@@ -43,8 +48,12 @@ const SwitchLanguageButton = ({ swapBg }: { swapBg?: boolean }) => {
                         }}
                     />
                     <div
-                        className={`absolute monoPtFont select-none
-                                   ${i18n.language === "en" ? "left-[56px]" : "left-[12px]"}
+                        className={`absolute monoPtFont select-none sm:text-[1em] text-[12px]
+                                   ${
+                                       i18n.language === "en"
+                                           ? "sm:left-[56px] left-[50px]"
+                                           : "sm:left-[12px] left-[8px]"
+                                   }
                                    ${!isDarkMode && swapBg ? "cryptorollDarkText" : "cryptorollWhiteText"}
                                    transition-all duration-[0.5s] ease-out`}
                     >

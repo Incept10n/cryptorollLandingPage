@@ -36,7 +36,7 @@ const GoBackButton = () => {
     return (
         <Link
             to={"/"}
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer scale-[0.9]"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >

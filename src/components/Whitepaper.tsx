@@ -19,12 +19,17 @@ const Whitepaper = ({
     return (
         <>
             <WhitepaperHeader setIsDarkMode={setIsDarkMode} />
-            <h1 className="cryptorollOrangeText text-[40px] text-center mt-[60px] mb-[23px]">
+            <h1
+                className="cryptorollOrangeText text-center mt-[60px] mb-[23px]
+                           sm:text-[40px] text-[16px]"
+            >
                 whitepaper
             </h1>
             <WhitepaperText />
             <p
-                className={`text-[40px] text-center leading-[39.56px] max-w-[1065px] mx-auto my-[125px]
+                className={`lg:text-[40px] sm:text-[23px] text-[16px] text-center 
+                            lg:leading-[39.56px] sm:leading-[30px] leading-[15.82px]
+                            lg:max-w-[1065px] sm:max-w-[80%] max-w-[303px] mx-auto my-[40px]
                             ${isDarkMode ? "cryptorollWhiteText" : "cryptorollDarkText"}`}
             >
                 {t("joinUs")}
