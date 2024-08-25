@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import HeaderAndParagraph from "./helperComponents/HeaderAndParagraph";
 
 const Nfts = () => {
     const { t } = useTranslation();
@@ -32,30 +33,34 @@ const Nfts = () => {
     }, []);
 
     return (
-        <div ref={divRef} className="text-center relative overflow-hidden">
-            <div
-                className={`flex flex-col items-center
+        <div ref={divRef} className="text-center relative">
+            <div className="overflow-hidden">
+                <div
+                    className={`flex flex-col items-center
                             ${slideLeft ? "translate-x-0" : "translate-x-[110%]"}
                             transition-all duration-[1.2s] ease-in-out`}
-            >
-                <h1 className="font-[500] text-[40px] max-w-[916px]">
-                    {t("nftsHeader")}
-                </h1>
-                <p className="monoPtFont max-w-[883px] mt-[35px] text-[20px]">
-                    {t("nftsParagraph")}
-                </p>
+                >
+                    <HeaderAndParagraph
+                        header={t("nftsHeader")}
+                        text={t("nftsParagraph")}
+                    />
+                </div>
             </div>
             <div
-                className="absolute left-[14%] top-[25%] w-[80px] h-[80px]
-                            bg-[url(/paragraphIcons/shieldWithLock.svg)]"
+                className="absolute sm:left-[7%] left-[4%] sm:top-[25%] top-[20%]
+                           bg-contain bg-no-repeat
+                           bg-[url(/paragraphIcons/shieldWithLock.svg)]
+                           xl:w-[80px] xl:h-[80px] md:w-[56px] md:h-[56px] w-[30px] h-[30px]"
             />
             <div
-                className="absolute right-[19%] top-[40%] w-[56px] h-[56px]
-                            bg-[url(/paragraphIcons/pictureGallery.svg)]"
+                className="absolute sm:right-[7%] right-[3%] top-[40%] bg-contain bg-no-repeat
+                           bg-[url(/paragraphIcons/pictureGallery.svg)]
+                           xl:w-[56px] xl:h-[56px] md:w-[40px] md:h-[40px] w-[30px] h-[30px]"
             />
             <div
-                className="absolute left-[25%] bottom-[-28%] w-[65px] h-[65px]
-                            bg-[url(/paragraphIcons/heart.svg)] bg-contain bg-no-repeat"
+                className="absolute left-[25%] lg:bottom-[-35%] md:bottom-[-44%] sm:bottom-[-17%] bottom-[-15%]
+                           bg-[url(/paragraphIcons/heart.svg)] bg-contain bg-no-repeat
+                           xl:w-[65px] xl:h-[65px] md:w-[56px] md:h-[56px] w-[30px] h-[30px]"
             />
         </div>
     );

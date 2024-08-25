@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import HeaderAndParagraph from "./helperComponents/HeaderAndParagraph";
 
 const Leveraging = () => {
     const { t } = useTranslation();
@@ -39,21 +40,21 @@ const Leveraging = () => {
                             ${slideLeft ? "translate-x-0" : "translate-x-[110%]"}
                             transition-all duration-[1.2s] ease-in-out`}
                 >
-                    <h1 className="font-[500] text-[40px] max-w-[916px]">
-                        {t("leveragingHeader")}
-                    </h1>
-                    <p className="monoPtFont max-w-[883px] mt-[35px] text-[20px]">
-                        {t("leveragingParagraph")}
-                    </p>
+                    <HeaderAndParagraph
+                        header={t("leveragingHeader")}
+                        text={t("leveragingParagraph")}
+                    />
                 </div>
             </div>
             <div
-                className="absolute left-[19%] top-[30%] w-[58px] h-[58px]
-                            bg-[url(/paragraphIcons/compass.svg)]"
+                className="absolute sm:left-[9%] left-[5%] sm:top-[30%] top-[13%] bg-contain bg-no-repeat
+                            bg-[url(/paragraphIcons/compass.svg)]
+                           lg:w-[58px] lg:h-[58px] md:w-[46px] md:h-[46px] w-[30px] h-[30px]"
             />
             <div
-                className="absolute right-[19%] bottom-[-20%] w-[90px] h-[90px]
-                            bg-[url(/paragraphIcons/rocket.svg)] bg-contain bg-no-repeat"
+                className="absolute right-[9%] bottom-[-20%] 
+                           bg-[url(/paragraphIcons/rocket.svg)] bg-contain bg-no-repeat
+                           lg:w-[90px] lg:h-[90px] md:w-[60px] md:h-[60px] w-[30px] h-[30px]"
             />
         </div>
     );

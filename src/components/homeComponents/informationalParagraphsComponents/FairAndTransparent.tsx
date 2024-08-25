@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import HeaderAndParagraph from "./helperComponents/HeaderAndParagraph";
 
 const FairAndTransparent = () => {
     const { t } = useTranslation();
@@ -39,20 +40,20 @@ const FairAndTransparent = () => {
                              ${slideRight ? "translate-x-0" : "translate-x-[-110%]"}
                              transition-all duration-[1.2s] ease-in-out`}
             >
-                <h1 className="font-[500] text-[40px] max-w-[916px]">
-                    {t("fairAndTransparentHeader")}
-                </h1>
-                <p className="monoPtFont max-w-[883px] mt-[35px] text-[20px]">
-                    {t("fairAndTransparentParagraph")}
-                </p>
+                <HeaderAndParagraph
+                    header={t("fairAndTransparentHeader")}
+                    text={t("fairAndTransparentParagraph")}
+                />
             </div>
             <div
-                className="absolute left-[19%] bottom-[-5%] w-[62px] h-[62px]
-                            bg-[url(/paragraphIcons/stockUp.svg)]"
+                className="absolute left-[9%] sm:bottom-[-5%] bottom-[-13%] bg-contain bg-no-repeat
+                            bg-[url(/paragraphIcons/stockUp.svg)]
+                            lg:w-[62px] lg:h-[62px] md:w-[47px] md:h-[47px] w-[30px] h-[30px]"
             />
             <div
-                className="absolute right-[19%] top-[8%] w-[78px] h-[78px]
-                            bg-[url(/paragraphIcons/handShake.svg)]"
+                className="absolute right-[9%] sm:top-[24%] top-[-20%] bg-contain bg-no-repeat
+                           bg-[url(/paragraphIcons/handShake.svg)]
+                           lg:w-[78px] lg:h-[78px] md:w-[55px] md:h-[55px] w-[30px] h-[30px]"
             />
         </div>
     );
