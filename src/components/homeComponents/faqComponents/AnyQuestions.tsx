@@ -12,7 +12,7 @@ const AnyQuestions = () => {
         >
             <h1
                 className="lg:text-[40px] sm:text-[30px] text-[16px]
-                           xl:text-[#000010] text-[#wd47b28] xl:m-auto mb-[20px]"
+                           xl:text-inherit text-[#d47b28] xl:m-auto mb-[20px]"
             >
                 {t("anyQuestions")}
             </h1>
