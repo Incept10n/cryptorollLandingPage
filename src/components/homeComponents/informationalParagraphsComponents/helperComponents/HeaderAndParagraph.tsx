@@ -7,7 +7,10 @@ const HeaderAndParagraph = ({
 }) => {
     return (
         <>
-            <h1 className="font-[500] xl:text-[40px] lg:text-[30px] md:text-[24px] text-[16px]">
+            <h1
+                className="font-[500] xl:text-[40px] lg:text-[30px] md:text-[24px] text-[16px]
+                           max-w-[90%]"
+            >
                 {header}
             </h1>
             <p

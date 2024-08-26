@@ -9,7 +9,7 @@ import SmallScreenParticles from "./phrasesSectionComponents/particleScreenPlace
 
 const PhrasesSection = () => {
     return (
-        <div className="md:h-[150vh] h-[105vh] flex justify-center items-center relativei overflow-hidden">
+        <div className="sm:py-[200px] py-[180px] flex justify-center items-center relativei overflow-hidden">
             <div
                 className="lg:bg-[url(/phrasesBackground.svg)] bg-[url(/phrasesBackgroundSmall.svg)] 
                            bg-contain bg-no-repeat bg-center

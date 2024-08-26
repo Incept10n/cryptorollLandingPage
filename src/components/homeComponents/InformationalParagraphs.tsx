@@ -10,7 +10,7 @@ const InformationalParagraphs = () => {
 
     return (
         <div
-            className={`h-[200vh] md:space-y-[140px] space-y-[60px]
+            className={`md:space-y-[140px] space-y-[60px]
                         ${isDarkMode ? "cryptorollWhiteText" : "cryptorollBlackText"}`}
         >
             <LowerFees />
