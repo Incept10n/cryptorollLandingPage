@@ -3,6 +3,7 @@ import Hero from "./homeComponents/Hero";
 import PhrasesSection from "./homeComponents/PhrasesSection";
 import InformationalParagraphs from "./homeComponents/InformationalParagraphs";
 import Faq from "./homeComponents/Faq";
+import Footer from "./homeComponents/Footer";
 
 const Home = ({
     setIsDarkMode,
@@ -16,9 +17,9 @@ const Home = ({
             <InformationalParagraphs />
 
             <Faq />
+            <Footer />
             {
                 // <Roadmap />
-                // <Footer />
             }
         </>
     );
