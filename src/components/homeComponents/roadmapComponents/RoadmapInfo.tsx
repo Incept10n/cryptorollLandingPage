@@ -25,11 +25,11 @@ const RoadmapInfo = ({
             }}
         >
             <div
-                className={`w-[2px] h-[280px] rounded-full
+                className={`w-[2px] h-[200px] rounded-full
                             ${isDarkMode ? "cryptorollWhiteBg" : "cryptorollBlackBg"}`}
             />
             <div
-                className={`absolute left-[21px] w-[380px]
+                className={`absolute left-[21px] w-[450px]
                              ${isUpper ? "top-0" : "bottom-0"}
                              ${isDarkMode ? "cryptorollWhiteText" : "cryptorollBlackText"}`}
             >

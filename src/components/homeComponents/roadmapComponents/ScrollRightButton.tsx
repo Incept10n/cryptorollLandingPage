@@ -14,11 +14,11 @@ const ScrollRightButton = ({
 
     return (
         <div
-            className={`right-[2%] bottom-[38%] absolute
+            className={`right-[2%] bottom-[10%] absolute
                             w-[140px] h-[140px] bg-contain bg-no-repeat
                             flex justify-end items-center hover:cursor-pointer
                             transition-all duration-[0.3s] ease-in
-                            ${isRoadmapExtended ? "rotate-[180deg]" : "rotate-0"}
+                            ${isRoadmapExtended ? "rotate-[-180deg]" : "rotate-0"}
                             ${
                                 isDarkMode
                                     ? "bg-[url(/roadmapImages/arrowDarkMode.svg)]"

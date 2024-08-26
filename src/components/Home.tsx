@@ -4,6 +4,7 @@ import PhrasesSection from "./homeComponents/PhrasesSection";
 import InformationalParagraphs from "./homeComponents/InformationalParagraphs";
 import Faq from "./homeComponents/Faq";
 import Footer from "./homeComponents/Footer";
+import Roadmap from "./homeComponents/Roadmap";
 
 const Home = ({
     setIsDarkMode,
@@ -15,12 +16,9 @@ const Home = ({
             <Hero setIsDarkMode={setIsDarkMode} />
             <PhrasesSection />
             <InformationalParagraphs />
-
+            <Roadmap />
             <Faq />
             <Footer />
-            {
-                // <Roadmap />
-            }
         </>
     );
 };
