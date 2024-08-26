@@ -27,7 +27,7 @@ const Whitepaper = ({
             </h1>
             <WhitepaperText />
             <p
-                className={`lg:text-[40px] sm:text-[23px] text-[16px] text-center 
+                className={`lg:text-[40px] sm:text-[23px] text-[16px] text-center mt-[60px]
                             lg:leading-[39.56px] sm:leading-[30px] leading-[15.82px]
                             lg:max-w-[1065px] sm:max-w-[80%] max-w-[303px] mx-auto my-[40px]
                             ${isDarkMode ? "cryptorollWhiteText" : "cryptorollDarkText"}`}

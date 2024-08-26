@@ -9,8 +9,8 @@ const Header = ({
     setIsDarkMode: Dispatch<SetStateAction<boolean>>;
 }) => {
     return (
-        <div className="pt-[63px] flex sm:justify-between justify-center w-[90%] mx-auto">
-            <div className="sm:w-[157px] w-[80%] flex justify-between">
+        <div className="pt-[63px] flex sm:justify-between justify-start sm:w-[90%] w-[84%] mx-auto">
+            <div className="sm:w-[157px] w-[140px] flex justify-between">
                 <DarkLightModeSwitch setIsDarkMode={setIsDarkMode} />
                 <SwitchLanguageButton />
             </div>
