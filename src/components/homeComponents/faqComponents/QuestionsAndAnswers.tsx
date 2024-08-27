@@ -10,7 +10,6 @@ const QuestionsAndAnswers = () => {
             <Question question={t("question2")} answer={t("question2Answer")} />
             <Question question={t("question3")} answer={t("question3Answer")} />
             <Question question={t("question4")} answer={t("question4Answer")} />
-            <Question question={t("question5")} answer={t("question5Answer")} />
             <Question question={t("question6")} answer={t("question6Answer")} />
         </div>
     );

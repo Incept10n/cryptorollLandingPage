@@ -61,18 +61,18 @@ const ScrollButton = ({
                             flex justify-end items-center hover:cursor-pointer
                             transition-all duration-[0.3s] ease-in
                             ${showButton ? "block" : "hidden"}
-                            ${direction === "right" ? "rotate-[45deg]" : "rotate-[-135deg]"}
-                            ${
-                                isDarkMode
-                                    ? `bg-[url(${assets.icons.arrow.darkMode})]`
-                                    : `bg-[url(${assets.icons.arrow.lightMode})]`
-                            }`}
+                            ${direction === "right" ? "rotate-[45deg]" : "rotate-[-135deg]"}`}
             onMouseEnter={() => setIsButtonHovered(true)}
             onMouseLeave={() => setIsButtonHovered(false)}
             onMouseDown={handleOnClick}
             style={{
                 right: `${position.right}%`,
                 bottom: `${position.bottom}%`,
+                backgroundImage: `url(${
+                    isDarkMode
+                        ? assets.icons.arrow.darkMode
+                        : assets.icons.arrow.lightMode
+                })`,
             }}
         >
             <div

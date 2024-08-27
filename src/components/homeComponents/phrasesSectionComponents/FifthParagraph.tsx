@@ -12,7 +12,7 @@ const FifthParagraph = () => {
         >
             <div>{t("fastService")}</div>
             <div>{i18n.language === "en" && t("withdrawals")}</div>
-            <div className="flex justify-center space-x-[16px]">
+            <div className="flex justify-center md:space-x-[10px] space-x-[4px]">
                 <div>{i18n.language === "ru" && t("withdrawals")}</div>
                 <div>{t("with")}</div>
                 <div className="text-[#d47b28]">{t("oneClick")}</div>
