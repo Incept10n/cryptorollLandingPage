@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ApplicationContext } from "../../../App";
+import { useTranslation } from "react-i18next";
 
 const RoadmapInfo = ({
     position,
@@ -15,6 +16,7 @@ const RoadmapInfo = ({
     isUpper: boolean;
 }) => {
     const { isDarkMode } = useContext(ApplicationContext)!;
+    const { i18n } = useTranslation();
 
     return (
         <div
@@ -25,17 +27,24 @@ const RoadmapInfo = ({
             }}
         >
             <div
-                className={`w-[2px] h-[200px] rounded-full
+                className={`w-[2px] xl:h-[200px] h-[160px] rounded-full
                             ${isDarkMode ? "cryptorollWhiteBg" : "cryptorollBlackBg"}`}
             />
             <div
-                className={`absolute left-[21px] w-[450px]
-                             ${isUpper ? "top-0" : "bottom-0"}
-                             ${isDarkMode ? "cryptorollWhiteText" : "cryptorollBlackText"}`}
+                className={`absolute xl:left-[21px] left-[10px]
+                            ${
+                                i18n.language === "en"
+                                    ? "xl:w-[450px] w-[223px]"
+                                    : "xl:w-[550px] w-[223px]"
+                            }
+                            ${isUpper ? "top-0" : "bottom-0"}
+                            ${isDarkMode ? "cryptorollWhiteText" : "cryptorollBlackText"}`}
             >
-                <h1 className="text-[40px] leading-[39px]">{header}</h1>
-                <div className="text-[20px]">{date}</div>
-                <p className="monoPtFont">{text}</p>
+                <h1 className="xl:text-[40px] text-[16px] xl:leading-[39px] leading-[15.82px]">
+                    {header}
+                </h1>
+                <div className="xl:text-[20px] text-[14px]">{date}</div>
+                <p className="monoPtFont xl:text-[1em] text-[12px]">{text}</p>
             </div>
         </div>
     );

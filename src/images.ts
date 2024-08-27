@@ -7,6 +7,14 @@ import worldIconDarkMode from "/images/WorldIcon.svg";
 import worldIconLightMode from "/images/worldIconLightMode.svg";
 import phrasesBigBg from "/phrasesBackground.svg";
 import phrasesSmallBg from "/phrasesBackgroundSmall.svg";
+import arrowLightMode from "/roadmapImages/arrowLightMode.svg";
+import arrowDarkMode from "/roadmapImages/arrowDarkMode.svg";
+
+import desktopRoadmapBgDarkMode from "/roadmapImages/roadmapBg/finalBgDarkTheme.svg";
+import desktopRoadmapBgLightMode from "/roadmapImages/roadmapBg/finalBgLightTheme-1.svg";
+
+import mobileRoadmapDarkMode from "/roadmapImages/roadmapBg/smallerScreesRoadmapBgDarkMode.svg";
+import mobileRoadmapLightMode from "/roadmapImages/roadmapBg/smallerScreesRoadmapLightMode.svg";
 
 export const assets = {
     icons: {
@@ -21,6 +29,10 @@ export const assets = {
             lightMode: worldIconLightMode,
             darkMode: worldIconDarkMode,
         },
+        arrow: {
+            lightMode: arrowLightMode,
+            darkMode: arrowDarkMode,
+        },
     },
     images: {
         switchLanguageFrame: {
@@ -30,6 +42,16 @@ export const assets = {
         phrasesBg: {
             big: phrasesBigBg,
             small: phrasesSmallBg,
+        },
+        roadmap: {
+            mobile: {
+                darkMode: mobileRoadmapDarkMode,
+                lightMode: mobileRoadmapLightMode,
+            },
+            desktop: {
+                darkMode: desktopRoadmapBgDarkMode,
+                lightMode: desktopRoadmapBgLightMode,
+            },
         },
     },
 };
