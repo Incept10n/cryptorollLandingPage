@@ -12,7 +12,7 @@ const Roadmap = () => {
     const roadmapWidth = isMobile ? 1284 : 2289;
 
     return (
-        <div className="xl:h-[1100px] h-[730px] overflow-hidden relative mt-[160px]">
+        <div className="xl:h-[910px] h-[730px] overflow-hidden relative mt-[160px]">
             <h1 className="cryptorollOrangeText text-[40px] text-center">
                 {t("roadmap")}
             </h1>
@@ -23,7 +23,7 @@ const Roadmap = () => {
                 direction="left"
                 position={{
                     right: isMobile ? 82 : 95,
-                    bottom: isMobile ? 2 : 10,
+                    bottom: isMobile ? 2 : 3,
                 }}
                 roadmapBgWidth={roadmapWidth}
             />
@@ -33,7 +33,7 @@ const Roadmap = () => {
                 direction="right"
                 position={{
                     right: isMobile ? 10 : 2,
-                    bottom: isMobile ? 2 : 10,
+                    bottom: isMobile ? 2 : 3,
                 }}
                 roadmapBgWidth={roadmapWidth}
             />

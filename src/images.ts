@@ -10,8 +10,8 @@ import phrasesSmallBg from "/phrasesBackgroundSmall.svg";
 import arrowLightMode from "/roadmapImages/arrowLightMode.svg";
 import arrowDarkMode from "/roadmapImages/arrowDarkMode.svg";
 
-import desktopRoadmapBgDarkMode from "/roadmapImages/roadmapBg/finalBgDarkTheme.svg";
-import desktopRoadmapBgLightMode from "/roadmapImages/roadmapBg/finalBgLightTheme-1.svg";
+import desktopRoadmapBgDarkMode from "/roadmapImages/roadmapBg/slimfinalBgDarkTheme.svg";
+import desktopRoadmapBgLightMode from "/roadmapImages/roadmapBg/slimFinalBgLightTheme.svg";
 
 import mobileRoadmapDarkMode from "/roadmapImages/roadmapBg/smallerScreesRoadmapBgDarkMode.svg";
 import mobileRoadmapLightMode from "/roadmapImages/roadmapBg/smallerScreesRoadmapLightMode.svg";

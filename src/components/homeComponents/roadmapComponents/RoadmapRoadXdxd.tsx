@@ -51,7 +51,7 @@ const RoadmapRoadXdxd = ({
                 />
                 <RoadmapInfo
                     position={{
-                        top: isMobile ? 55.2 : 98.4,
+                        top: isMobile ? 55.2 : 64.3,
                         left: isMobile ? 18.73 : 27.66,
                     }}
                     header={t("launchAppHeader")}
@@ -62,7 +62,7 @@ const RoadmapRoadXdxd = ({
                 <RoadmapInfo
                     position={{
                         top: isMobile ? -38 : -47.8,
-                        left: isMobile ? 29.7 : 43.7,
+                        left: isMobile ? 29.7 : 43.63,
                     }}
                     header={t("launchStakingHeader")}
                     date={t("launchStakingDate")}
@@ -71,8 +71,8 @@ const RoadmapRoadXdxd = ({
                 />
                 <RoadmapInfo
                     position={{
-                        top: isMobile ? 55.2 : 98.4,
-                        left: isMobile ? 41.35 : 58.35,
+                        top: isMobile ? 55.2 : 64.3,
+                        left: isMobile ? 41.35 : 58.45,
                     }}
                     header={t("launchTokenHeader")}
                     date={t("launchTokenDate")}
@@ -81,8 +81,8 @@ const RoadmapRoadXdxd = ({
                 />
                 <RoadmapInfo
                     position={{
-                        top: isMobile ? -37.8 : -47.8,
-                        left: isMobile ? 50.15 : 71.42,
+                        top: isMobile ? -37.8 : -47.6,
+                        left: isMobile ? 50.15 : 71.34,
                     }}
                     header={t("tokenListingHeader")}
                     date={t("tokenListingDate")}
