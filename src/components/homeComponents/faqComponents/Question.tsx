@@ -53,10 +53,10 @@ const Question = ({
                 </div>
                 <p
                     className={`monoPtFont leading-[22px] ml-[7px] overflow-hidden
-                            ${isAnswerExpanded ? "max-h-[300px]" : "max-h-[0px]"}
-                            transition-all duration-[0.4s] ease-in-out
-                            md:text-[20px] sm:text-[14px] text-[12px] 
-                            md:max-w-full sm:max-w-[400px] max-w-[292px]`}
+                                ${isAnswerExpanded ? "max-h-[360px]" : "max-h-[0px]"}
+                                transition-all duration-[0.4s] ease-in-out
+                                md:text-[20px] sm:text-[14px] text-[12px] 
+                                md:max-w-full sm:max-w-[400px] max-w-[292px]`}
                 >
                     {answer}
                 </p>

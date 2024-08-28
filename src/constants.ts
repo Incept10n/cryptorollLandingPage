@@ -4,6 +4,4 @@ export const LANGUAGES = [
 ];
 
 export const currentURL =
-    import.meta.env.MODE === "development"
-        ? "http://172.27.33.20:5173"
-        : "cryptoroll.com";
+    import.meta.env.MODE === "development" ? "http://172.27.33.20:5173" : "";
