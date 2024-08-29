@@ -52,7 +52,7 @@ const Question = ({
                     />
                 </div>
                 <p
-                    className={`monoPtFont leading-[22px] ml-[7px] overflow-hidden
+                    className={`monoPtFont leading-[22px] sm:ml-[7px] mx-auto text-center overflow-hidden
                                 ${isAnswerExpanded ? "max-h-[360px]" : "max-h-[0px]"}
                                 transition-all duration-[0.4s] ease-in-out
                                 md:text-[20px] sm:text-[14px] text-[12px] 

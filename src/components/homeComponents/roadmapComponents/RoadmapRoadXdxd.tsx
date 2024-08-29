@@ -91,8 +91,12 @@ const RoadmapRoadXdxd = ({
                 />
                 {isMobile && (
                     <div
-                        className={`absolute top-[35%] text-[20px]
-                                    ${i18n.language === "en" ? "left-[76%]" : "left-[70%]"}
+                        className={`absolute text-[20px]
+                                    ${
+                                        i18n.language === "en"
+                                            ? "left-[76%] top-[35%] "
+                                            : "left-[70%] w-[300px] text-center top-[30%]"
+                                    }
                                     ${isDarkMode ? "cryptorollWhiteText" : "cryptorollDarkText"}`}
                     >
                         {t("toBeAnnounced")}
