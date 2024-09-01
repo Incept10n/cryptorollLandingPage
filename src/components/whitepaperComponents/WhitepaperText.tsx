@@ -38,7 +38,10 @@ const WhitepaperText = () => {
             <SubParagraph header={t("step3")} text={t("step3Text")} />
             <SubParagraph header={t("step4")} text={t("step4Text")} />
             <SubParagraph header={t("step5")} text={t("step5Text")} />
-            <BigParagraph header={t("conclusion")} text={t("conclusionText")} />
+            <BigParagraph
+                header={t("conclusionHeader")}
+                text={t("conclusionText")}
+            />
         </div>
     );
 };

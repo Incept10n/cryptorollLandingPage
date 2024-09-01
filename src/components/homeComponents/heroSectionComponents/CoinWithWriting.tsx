@@ -14,9 +14,9 @@ const CoinWithWriting = () => {
                 className="sm:w-[382px] w-0 sm:h-[382px] h-0 sm:block hidden"
             />
             <div
-                className="cryptorollWhiteText sm:text-[20px] text-[24px] text-center 
-                           sm:max-w-full max-w-[237px] relative
-                           sm:leading-normal leading-[45.72px]"
+                className="cryptorollWhiteText sm:text-[20px] text-[18px] text-center 
+                           sm:max-w-[840px] max-w-[460px] relative
+                           sm:leading-normal leading-[37px]"
             >
                 {t("entryPhrase")}
             </div>
