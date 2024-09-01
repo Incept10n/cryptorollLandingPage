@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { assets } from "../../images";
 import { useContext } from "react";
 import { ApplicationContext } from "../../App";
+import { setLanguageCookie } from "../../utils/cookieUtils";
 
 const SwitchLanguageButton = ({ swapBg }: { swapBg?: boolean }) => {
     const { i18n, t } = useTranslation();
@@ -11,8 +12,10 @@ const SwitchLanguageButton = ({ swapBg }: { swapBg?: boolean }) => {
     const handleChangeLanguage = () => {
         if (i18n.language === "en") {
             i18n.changeLanguage("ru");
+            setLanguageCookie("ru");
         } else if (i18n.language === "ru") {
             i18n.changeLanguage("en");
+            setLanguageCookie("en");
         }
     };
 

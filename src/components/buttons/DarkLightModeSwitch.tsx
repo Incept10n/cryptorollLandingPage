@@ -1,6 +1,7 @@
 import { Dispatch, SetStateAction, useContext, useState } from "react";
 import { ApplicationContext } from "../../App";
 import { assets } from "../../images";
+import { setIsDarkModeCookie } from "../../utils/cookieUtils";
 
 const DarkLightModeSwitch = ({
     setIsDarkMode,
@@ -13,7 +14,10 @@ const DarkLightModeSwitch = ({
     const [triggerAnimation, setTriggerAnimation] = useState<boolean>(false);
 
     const handleToggle = () => {
-        setIsDarkMode((prevState) => !prevState);
+        setIsDarkMode((prevState) => {
+            setIsDarkModeCookie(!prevState);
+            return !prevState;
+        });
 
         setTriggerAnimation(true);
         setTimeout(() => setTriggerAnimation(false), 200);

@@ -3,6 +3,11 @@ import { createContext, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Whitepaper from "./components/Whitepaper";
+import {
+    getLanguageCookie,
+    isDarkModeBrowserCookieCheck,
+} from "./utils/cookieUtils";
+import { useTranslation } from "react-i18next";
 
 interface ApplicationContextInterface {
     isDarkMode: boolean;
@@ -13,7 +18,10 @@ export const ApplicationContext = createContext<
 >(undefined);
 
 function App() {
-    const [isDarkMode, setIsDarkMode] = useState(true);
+    const [isDarkMode, setIsDarkMode] = useState<boolean>(
+        isDarkModeBrowserCookieCheck(),
+    );
+    const { i18n } = useTranslation();
 
     useEffect(() => {
         if (isDarkMode) {
@@ -23,6 +31,8 @@ function App() {
             document.body.classList.add("cryptorollWhiteBg");
             document.body.classList.remove("cryptorollDarkModeBg");
         }
+
+        i18n.changeLanguage(getLanguageCookie());
     }, [isDarkMode]);
 
     return (
