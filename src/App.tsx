@@ -8,6 +8,8 @@ import {
     isDarkModeBrowserCookieCheck,
 } from "./utils/cookieUtils";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
+import { assets } from "./images";
 
 interface ApplicationContextInterface {
     isDarkMode: boolean;
@@ -21,7 +23,7 @@ function App() {
     const [isDarkMode, setIsDarkMode] = useState<boolean>(
         isDarkModeBrowserCookieCheck(),
     );
-    const { i18n } = useTranslation();
+    const { i18n, t } = useTranslation();
 
     useEffect(() => {
         if (isDarkMode) {
@@ -37,6 +39,18 @@ function App() {
 
     return (
         <ApplicationContext.Provider value={{ isDarkMode }}>
+            <Helmet>
+                <meta name="description" content={t("metaDescription")} />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    href={
+                        isDarkMode
+                            ? assets.icons.favicon.lightMode
+                            : assets.icons.favicon.lightMode
+                    }
+                />
+            </Helmet>
             <BrowserRouter>
                 <Routes>
                     <Route

@@ -16,6 +16,8 @@ import desktopRoadmapBgLightMode from "/roadmapImages/roadmapBg/slimFinalBgLight
 import mobileRoadmapDarkMode from "/roadmapImages/roadmapBg/smallerScreesRoadmapBgDarkMode.svg";
 import mobileRoadmapLightMode from "/roadmapImages/roadmapBg/smallerScreesRoadmapLightMode.svg";
 
+import faviconLightTheme from "/favicon/cryptorollFaviconLightTheme.png";
+
 export const assets = {
     icons: {
         moonSwitchMode: {
@@ -32,6 +34,9 @@ export const assets = {
         arrow: {
             lightMode: arrowLightMode,
             darkMode: arrowDarkMode,
+        },
+        favicon: {
+            lightMode: faviconLightTheme,
         },
     },
     images: {
