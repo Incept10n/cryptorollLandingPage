@@ -46,7 +46,7 @@ function App() {
                     type="image/png"
                     href={
                         isDarkMode
-                            ? assets.icons.favicon.lightMode
+                            ? assets.icons.favicon.darkMode
                             : assets.icons.favicon.lightMode
                     }
                 />

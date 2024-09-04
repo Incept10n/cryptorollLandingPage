@@ -16,7 +16,8 @@ import desktopRoadmapBgLightMode from "/roadmapImages/roadmapBg/slimFinalBgLight
 import mobileRoadmapDarkMode from "/roadmapImages/roadmapBg/smallerScreesRoadmapBgDarkMode.svg";
 import mobileRoadmapLightMode from "/roadmapImages/roadmapBg/smallerScreesRoadmapLightMode.svg";
 
-import faviconLightTheme from "/favicon/cryptorollFaviconLightTheme.png";
+import faviconDarkTheme from "/favicon/faviconBlackTheme.png";
+import faviconLightTheme from "/favicon/faviconWhiteTheme.png";
 
 export const assets = {
     icons: {
@@ -37,6 +38,7 @@ export const assets = {
         },
         favicon: {
             lightMode: faviconLightTheme,
+            darkMode: faviconDarkTheme,
         },
     },
     images: {
