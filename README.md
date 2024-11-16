@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+<h1 align="center">Cryptoroll landing page</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://github.com/user-attachments/assets/d88fd124-1586-4056-88e0-504bad448448
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+The app is available here (<i>could be down</i>): https://cryptoros.su/landing
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+<h3>Motivation behind this app</h3>
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+This is a part of the Cryptoroll project.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+> <p>The mission is to build the fully decentralized gambling platform on the TON blockchain. <br>
+> Being a decentralized platform, the game is accessible to anyone with an internet connection and a TON wallet, <br>
+> ensuring a global player base without restrictions imposed by traditional gambling regulations.</p>
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### This app
+* has responsive design for all devices
+
+### Remarks
+  * This is a about (info/landing) page for cryptoroll, it is linked with Up/Down app
+  * The design is **not** mine (my designer friend has done it)
