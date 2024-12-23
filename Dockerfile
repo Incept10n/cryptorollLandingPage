@@ -1,25 +1,34 @@
-# Dockerfile for frontend landing page
+# Use the official Node.js image as the base image
+FROM node:18-alpine
 
-# Use the official Node.js image as the base for building the app
-FROM node:18 AS build
+# Set the working directory
 WORKDIR /app
 
-# Copy the package files and install dependencies
+# Copy the package.json and package-lock.json files
 COPY package*.json ./
+
+# Install dependencies
 RUN npm install
 
-# Copy the entire application and build it
+# Copy the entire project
 COPY . .
+
+# Build the React app
 RUN npm run build
 
-# Use a lightweight web server to serve the static files
-FROM nginx:1.23
-COPY --from=build /app/dist /usr/share/nginx/html
+# Use Nginx to serve the built React app
+FROM nginx:stable-alpine
 
-# Copy the custom Nginx configuration
+# Copy the built React app from the previous stage
+COPY --from=0 /app/dist /usr/share/nginx/html/landing-page
+
+# Copy the Nginx configuration file
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose port 80 to access the application
+# Set proper permissions
+RUN chmod -R 777 /usr/share/nginx/html
+
+# Expose the port on which Nginx will run
 EXPOSE 80
 
 # Start Nginx
