@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { ApplicationContext } from "../../App";
 import { Link } from "react-router-dom";
+import { WHITEPAPER_URL } from "../../constants";
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -17,7 +18,7 @@ const Footer = () => {
             >
                 <span>{t("footerTextPart1")}</span>
                 <Link
-                    to="/whitepaper"
+                    to={WHITEPAPER_URL}
                     className="cryptorollOrangeText hover:cursor-pointer hover:underline mx-[7px]"
                 >
                     {t("whitepaper")}

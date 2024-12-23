@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { WHITEPAPER_URL } from "../../constants";
 
 const GoToWhitepaperButton = () => {
     const [currentBgColor, setCurrentBgColor] =
@@ -7,7 +8,7 @@ const GoToWhitepaperButton = () => {
 
     return (
         <Link
-            to={"/whitepaper"}
+            to={WHITEPAPER_URL}
             className="hover:cursor-pointer 
                        sm:relative absolute sm:left-auto sm:top-auto 
                        left-[50%] top-[70%] sm:translate-x-0 translate-x-[-50%]"

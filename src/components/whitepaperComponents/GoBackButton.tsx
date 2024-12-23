@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ApplicationContext } from "../../App";
 import { useTranslation } from "react-i18next";
+import { HOME_URL } from "../../constants";
 
 const GoBackButton = () => {
     const { isDarkMode } = useContext(ApplicationContext)!;
@@ -35,7 +36,7 @@ const GoBackButton = () => {
 
     return (
         <Link
-            to={"/"}
+            to={HOME_URL}
             className="hover:cursor-pointer sm:scale-100 scale-[0.9]"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}

@@ -10,14 +10,15 @@ import {
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 import { assets } from "./images";
+import { HOME_URL, WHITEPAPER_URL } from "./constants";
 
 interface ApplicationContextInterface {
     isDarkMode: boolean;
 }
 
-export const ApplicationContext = createContext<
-    ApplicationContextInterface | undefined
->(undefined);
+export const ApplicationContext = createContext<ApplicationContextInterface>({
+    isDarkMode: false,
+});
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState<boolean>(
@@ -54,11 +55,11 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route
-                        path="/"
+                        path={HOME_URL}
                         element={<Home setIsDarkMode={setIsDarkMode} />}
                     />
                     <Route
-                        path="/whitepaper"
+                        path={WHITEPAPER_URL}
                         element={<Whitepaper setIsDarkMode={setIsDarkMode} />}
                     />
                 </Routes>
