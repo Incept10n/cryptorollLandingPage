@@ -12,8 +12,8 @@ export const LANGUAGES = [
 //     ? window.location.origin //"http://172.27.33.20:5173"
 //     : "/landing";
 
-// export const HOME_URL = "/landing-page";
-// export const WHITEPAPER_URL = `${HOME_URL}/whitepaper`;
-
-export const HOME_URL = "";
+export const HOME_URL = "/landing-page";
 export const WHITEPAPER_URL = `${HOME_URL}/whitepaper`;
+
+// export const HOME_URL = "";
+// export const WHITEPAPER_URL = `${HOME_URL}/whitepaper`;
