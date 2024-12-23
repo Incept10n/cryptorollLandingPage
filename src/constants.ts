@@ -3,7 +3,7 @@ export const LANGUAGES = [
     { label: "English", code: "en" },
 ];
 
-export const currentURL = "http://localhost:5174"; // "http://localhost:4173";
+export const currentURL = "https://cryptoroll.su"; //"http://localhost:5174"; // "http://localhost:4173";
 // import.meta.env.MODE === "development"
 //     ? window.location.origin //"http://172.27.33.20:5173"
 //     : "/landing";
