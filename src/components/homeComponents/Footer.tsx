@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { ApplicationContext } from "../../App";
 import { Link } from "react-router-dom";
 import { WHITEPAPER_URL } from "../../constants";
+import { assets } from "../../images";
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -27,16 +28,18 @@ const Footer = () => {
             </div>
             <div className="flex space-x-[40px] mt-[20px]">
                 <div
-                    className="bg-[url(/socialMediaIcons/twitter.svg)] bg-contain bg-no-repeat
+                    className="bg-contain bg-no-repeat
                                md:w-[49px] md:h-[45px] sm:w-[40px] sm:h-[40px] w-[32px] h-[30px]"
+                    style={{
+                        backgroundImage: `url(${assets.icons.socialMedia.twitter})`,
+                    }}
                 />
                 <div
-                    className="bg-[url(/socialMediaIcons/telegram.svg)] bg-contain bg-no-repeat
+                    className="bg-contain bg-no-repeat
                                 md:w-[49px] md:h-[45px] sm:w-[40px] sm:h-[40px] w-[32px] h-[30px]"
-                />
-                <div
-                    className="bg-[url(/socialMediaIcons/vk.svg)] bg-contain bg-no-repeat
-                                md:w-[49px] md:h-[45px] sm:w-[40px] sm:h-[40px] w-[32px] h-[30px]"
+                    style={{
+                        backgroundImage: `url(${assets.icons.socialMedia.telegram})`,
+                    }}
                 />
             </div>
         </footer>

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ApplicationContext } from "../../../App";
+import { assets } from "../../../images";
 
 const Gradient = () => {
     const { isDarkMode } = useContext(ApplicationContext)!;
@@ -7,13 +8,14 @@ const Gradient = () => {
     return (
         <div>
             <div
-                className={`
-                            ${
-                                isDarkMode
-                                    ? "bg-[url(/gradientDarkMode.svg)] bg-cover"
-                                    : "bg-[url(/gradientLightMode.svg)] bg-cover"
-                            }
-                            w-[100%] h-[128px] absolute bottom-0 translate-y-[100%]`}
+                className={`w-[100%] h-[128px] absolute bottom-0 translate-y-[100%]`}
+                style={{
+                    backgroundImage: `url(${
+                        isDarkMode
+                            ? assets.images.gradient.darkMode
+                            : assets.images.gradient.lightMode
+                    })`,
+                }}
             ></div>
         </div>
     );

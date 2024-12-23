@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "fontOver";
-    src: url("/fontOver.otf") format("opentype");
+    src: url("/landing-page/fontOver.otf") format("opentype");
 }
 
 body {

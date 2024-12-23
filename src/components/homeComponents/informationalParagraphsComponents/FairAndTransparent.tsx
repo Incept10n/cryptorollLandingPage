@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import HeaderAndParagraph from "./helperComponents/HeaderAndParagraph";
+import { assets } from "../../../images";
 
 const FairAndTransparent = () => {
     const { t } = useTranslation();
@@ -46,14 +47,19 @@ const FairAndTransparent = () => {
                 />
             </div>
             <div
-                className="absolute left-[9%] sm:bottom-[-5%] bottom-[-13%] bg-contain bg-no-repeat
-                            bg-[url(/paragraphIcons/stockUp.svg)] sm:block hidden
-                            lg:w-[62px] lg:h-[62px] md:w-[47px] md:h-[47px] w-[30px] h-[30px]"
+                className="absolute left-[9%] sm:bottom-[-5%] bottom-[-13%] 
+                           bg-contain bg-no-repeat sm:block hidden
+                           lg:w-[62px] lg:h-[62px] md:w-[47px] md:h-[47px] w-[30px] h-[30px]"
+                style={{
+                    backgroundImage: `url(${assets.icons.stockUp})`,
+                }}
             />
             <div
                 className="absolute right-[9%] sm:top-[24%] top-[100%] bg-contain bg-no-repeat
-                           bg-[url(/paragraphIcons/handShake.svg)] 
                            lg:w-[78px] lg:h-[78px] md:w-[55px] md:h-[55px] w-[30px] h-[30px]"
+                style={{
+                    backgroundImage: `url(${assets.icons.handShake})`,
+                }}
             />
         </div>
     );

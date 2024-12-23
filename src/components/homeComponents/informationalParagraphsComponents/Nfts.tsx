@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import HeaderAndParagraph from "./helperComponents/HeaderAndParagraph";
+import { assets } from "../../../images";
 
 const Nfts = () => {
     const { t } = useTranslation();
@@ -49,18 +50,25 @@ const Nfts = () => {
             <div
                 className="absolute sm:left-[7%] left-[4%] sm:top-[25%] top-[20%]
                            bg-contain bg-no-repeat
-                           bg-[url(/paragraphIcons/shieldWithLock.svg)]
                            xl:w-[80px] xl:h-[80px] md:w-[56px] md:h-[56px] w-[30px] h-[30px]"
+                style={{
+                    backgroundImage: `url(${assets.icons.shieldWithLock})`,
+                }}
             />
             <div
                 className="absolute sm:right-[7%] right-[3%] top-[40%] bg-contain bg-no-repeat
-                           bg-[url(/paragraphIcons/pictureGallery.svg)]
                            xl:w-[56px] xl:h-[56px] md:w-[40px] md:h-[40px] w-[30px] h-[30px]"
+                style={{
+                    backgroundImage: `url(${assets.icons.pictureGallery})`,
+                }}
             />
             <div
                 className="absolute left-[25%] lg:bottom-[-35%] md:bottom-[-44%] sm:bottom-[-17%] bottom-[-15%]
-                           bg-[url(/paragraphIcons/heart.svg)] bg-contain bg-no-repeat
+                           bg-contain bg-no-repeat
                            xl:w-[65px] xl:h-[65px] md:w-[56px] md:h-[56px] w-[30px] h-[30px]"
+                style={{
+                    backgroundImage: `url(${assets.icons.heart})`,
+                }}
             />
         </div>
     );

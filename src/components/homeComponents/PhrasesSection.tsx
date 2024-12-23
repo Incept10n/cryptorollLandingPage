@@ -6,15 +6,21 @@ import FifthParagraph from "./phrasesSectionComponents/FifthParagraph";
 import BigScreenParticles from "./phrasesSectionComponents/particleScreenPlacement/BigScreenParticles";
 import MediumScreenParticles from "./phrasesSectionComponents/particleScreenPlacement/MediumScreenParticles";
 import SmallScreenParticles from "./phrasesSectionComponents/particleScreenPlacement/SmallScreenParticles";
+import { assets } from "../../images";
 
 const PhrasesSection = () => {
     return (
         <div className="sm:py-[200px] pt-[180px] pb-[120px] flex justify-center items-center relativei overflow-hidden">
             <div
-                className="lg:bg-[url(/phrasesBackground.svg)] bg-[url(/phrasesBackgroundSmall.svg)] 
-                           bg-contain bg-no-repeat bg-center
-                           lg:w-[1039px] lg:h-[799px] md:w-[768px] md:h-[800px] w-[404px] h-[420px] 
-                           relative"
+                className={`bg-contain bg-no-repeat bg-center
+                            lg:w-[1039px] lg:h-[799px] md:w-[768px] md:h-[800px] w-[404px] h-[420px] 
+                            relative`}
+                style={{
+                    backgroundImage:
+                        window.innerWidth >= 1024
+                            ? `url(${assets.images.phrasesBg.big})`
+                            : `url(${assets.images.phrasesBg.small})`,
+                }}
             >
                 {window.innerWidth >= 1024 ? (
                     <BigScreenParticles />

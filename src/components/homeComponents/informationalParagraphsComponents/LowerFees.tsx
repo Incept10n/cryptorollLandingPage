@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import HeaderAndParagraph from "./helperComponents/HeaderAndParagraph";
+import { assets } from "../../../images";
 
 const LowerFees = () => {
     const { t } = useTranslation();
@@ -47,18 +48,26 @@ const LowerFees = () => {
             <div
                 className="absolute sm:left-[10%] sm:top-[25%] left-[5%] top-[100%] 
                            bg-contain bg-no-repeat
-                           bg-[url(/paragraphIcons/zeroPersentIcon.svg)]
                            xl:w-[74px] xl:h-[74px] md:w-[50px] md:h-[50px] w-[30px]  h-[30px]"
+                style={{
+                    backgroundImage: `url(${assets.icons.zeroPersent})`,
+                }}
             />
             <div
-                className="absolute sm:right-[12%] sm:top-[-13%] right-[6%] top-[-20%] bg-contain bg-no-repeat 
-                           bg-[url(/paragraphIcons/moneyInTheBox.svg)]
+                className="absolute sm:right-[12%] sm:top-[-13%] right-[6%] top-[-20%] 
+                           bg-contain bg-no-repeat 
                            xl:w-[58px] xl:h-[58px] md:w-[40px] md:h-[40px] w-[30px] h-[30px]"
+                style={{
+                    backgroundImage: `url(${assets.icons.moneyInTheBox})`,
+                }}
             />
             <div
                 className="absolute right-[13%] bottom-[-15%] 
-                           bg-[url(/paragraphIcons/cards.svg)] bg-contain bg-no-repeat
+                           bg-contain bg-no-repeat
                            xl:w-[70px] xl:h-[70px] md:w-[50px] md:h-[50px] md:block hidden"
+                style={{
+                    backgroundImage: `url(${assets.icons.cards})`,
+                }}
             />
         </div>
     );

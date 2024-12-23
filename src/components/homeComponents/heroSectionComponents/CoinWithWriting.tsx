@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { assets } from "../../../images";
 
 const CoinWithWriting = () => {
     const { t } = useTranslation();
@@ -9,7 +10,7 @@ const CoinWithWriting = () => {
                         sm:flex sm:relative absolute sm:translate-y-0"
         >
             <img
-                src="/money.gif"
+                src={assets.gif.moneyGif}
                 alt="something"
                 className="sm:w-[382px] w-0 sm:h-[382px] h-0 sm:block hidden"
             />
